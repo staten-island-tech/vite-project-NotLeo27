@@ -1,0 +1,33 @@
+html, body, * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+:root {
+    --light-blue: #2998ff;
+    --dark-blue: #135cc5;
+    --light-red: #f87171;
+    --dark-red: #dc2626;
+    --primary: var(--dark-blue);
+
+    --h1: 7.945rem;
+    --h2: 
+}
+
+body {
+    background: var(--primary)
+}
+
+h1 {
+    font-size: var(--h1)
+}
+
+h2 {
+    font-size: var(--h2)
+}
+
+h1, h2, h3, h4, h5 {
+    text-align: center; 
+}
