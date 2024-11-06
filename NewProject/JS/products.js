@@ -233,3 +233,7 @@ const Personas = [
 ];
 
 export { Personas };
+
+Personas.forEach((persona) => {
+  console.log(persona.name);
+});
