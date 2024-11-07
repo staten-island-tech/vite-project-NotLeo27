@@ -6,10 +6,20 @@ Personas.forEach((persona) =>
   DOMSelectors.personaList.insertAdjacentHTML(
     "beforeend",
     `<div class="card" id="persona-item-${persona.name}">
-    <h1>${persona.name}</h1>
-    <p>${persona.level}</p>
-    <p>${persona.arcana}</p>
-    <img id="persona-image-${persona.name}" src="${persona.image}" alt="Skibidi" />
+    <div class="arcana" <p>${persona.arcana}</p> </div>
+    <div class="level"> <p>${persona.level}</p> </div>
+    <div class="name"> <p>${persona.name}</p> </div>
+    <div class="price"> <p>${persona.price}</p> </div>
+    
     </div>`
   )
 );
+
+/* 
+
+function SortBy() {
+  movies.filter((movie) => movies.actors.includes("James Earl Jones"))
+
+}
+
+*/

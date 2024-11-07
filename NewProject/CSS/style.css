@@ -1,3 +1,5 @@
+
+
 html, body, * {
     margin: 0;
     padding: 0;
@@ -5,29 +7,89 @@ html, body, * {
     font-size: 10px;
 }
 
-:root {
-    --light-blue: #2998ff;
-    --dark-blue: #135cc5;
-    --light-red: #f87171;
-    --dark-red: #dc2626;
-    --primary: var(--dark-blue);
-
-    --h1: 5.79rem;
-    --h2: 
-}
-
 body {
-    background: var(--primary)
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    
 }
 
-h1 {
-    font-size: var(--h1)
+#selection {
+    width: 900px;
+    margin: 20px auto;
+    background-color: #111;
+    border: 3px solid #000;
+    border-radius: 8px;
+    padding: 20px;
 }
 
-h2 {
-    font-size: var(--h2)
+.card {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
-h1, h2, h3, h4, h5 {
+
+.card:hover {
+    background-color: #ff0707;
+    transform: translateY(-5px);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #555;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #ddd;
+}
+
+.card img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.arcana {
+    background-color: white;
+    color: black;
+    border-radius: 5%;
+    border-top: 5px;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: var(--p);
+}
+
+.level {
+    margin-right: 5px;    /* Pushes the level to the far right */
+    padding-left: 10px;
+    font-size: var(--h2);
+}
+
+.name {
+    margin-right: auto;    /* Pushes the level to the far right */
+    padding-left: 10px;
+    font-size: var(--h2);
+}
+
+h1, h2, h3, h4, h5, p {
     text-align: center; 
+    color: white;
+}
+
+.sort-buttons {
+    align-self: center;
+}
+
+:root {
+    --h1: 7rem; 
+    --h2: 4rem;
+    --p: 3rem;
 }
