@@ -57,7 +57,6 @@ body {
 
 .arcana {
     background-color: white;
-    color: black;
     border-radius: 5%;
     border-top: 5px;
     width: 150px;
@@ -65,6 +64,8 @@ body {
     text-align: center;
     line-height: 30px;
     font-size: var(--p);
+    color: #ff2b2b; /* Red color for Arcana labels */
+    
 }
 
 
@@ -81,8 +82,22 @@ body {
     font-size: var(--h2); /* Directly apply the variable */
 }
 
-.sort-buttons {
-    align-items: center;
+.tabs {
+    display: flex;
+    justify-content: center;
+    background-color: #111;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 10px 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid #333;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background 0.3s;
 }
 
 h1, h2, h3, h4, h5, p {
@@ -90,7 +105,10 @@ h1, h2, h3, h4, h5, p {
     color: white;
 }
 
+.tab:hover {
+    background-color: #ff2b2b; /* Red highlight on active tab */
+}
+
 .sort-buttons {
     align-self: center;
 }
-
