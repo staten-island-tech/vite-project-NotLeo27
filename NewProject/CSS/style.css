@@ -23,6 +23,7 @@ body {
 }
 
 .card {
+    position: relative; /* Make the card a positioned element for absolute positioning of the hover tab */
     display: flex;
     align-items: center;
     padding: 10px;
@@ -32,10 +33,33 @@ body {
     transition: background-color 0.3s, transform 0.2s;
 }
 
-
 .card:hover {
     background-color: #ff0707;
     transform: translateY(-5px);
+}
+
+.hover-tab {
+    display: none; /* Hidden unless hovered over */
+    position: absolute;
+    top: 100%; /* Positioned just below the card */
+    left: 0;
+    width: 200px;
+    background-color: #444;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    z-index: 2; /* z access so I can place it above the tab and not behind it  */
+}
+
+.card:hover .hover-tab {
+    display: block; 
+}
+
+.hover-tab img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
 
 .header {
@@ -112,3 +136,15 @@ h1, h2, h3, h4, h5, p {
 .sort-buttons {
     align-self: center;
 }
+
+@media (max-width: 600px) {
+    #selection {
+      width: 100%;
+      padding: 10px;
+    }
+    .card {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
