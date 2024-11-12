@@ -3,7 +3,7 @@ const Personas = [
     name: "Arsène",
     level: 1,
     arcana: "Fool",
-    image: "",
+    image: "/Arsene.png",
     moves: [],
   },
   {
