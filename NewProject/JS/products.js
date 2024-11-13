@@ -5,6 +5,7 @@ const Personas = [
     arcana: "Fool",
     image: "",
     moves: [],
+    price: 1000, // Added empty price element
   },
   {
     name: "Raoul",
@@ -12,6 +13,7 @@ const Personas = [
     arcana: "Fool",
     image: "",
     moves: [],
+    price: 125000, // Added empty price element
   },
   {
     name: "Izanagi",
@@ -19,6 +21,7 @@ const Personas = [
     arcana: "Fool",
     image: "",
     moves: [],
+    price: 20000, // Added empty price element
   },
   {
     name: "Izanagi Picaro",
@@ -26,6 +29,7 @@ const Personas = [
     arcana: "Fool",
     image: "",
     moves: [],
+    price: 25000, // Added empty price element
   },
   {
     name: "Orpheus",
@@ -33,6 +37,7 @@ const Personas = [
     arcana: "Fool",
     image: "",
     moves: [],
+    price: 15000, // Added empty price element
   },
   {
     name: "Orpheus Picaro",
@@ -40,6 +45,7 @@ const Personas = [
     arcana: "Fool",
     image: "",
     moves: [],
+    price: 20000, // Added empty price element
   },
   {
     name: "Orpheus F",
@@ -47,6 +53,7 @@ const Personas = [
     arcana: "Fool",
     image: "",
     moves: [],
+    price: 12500, // Added empty price element
   },
   {
     name: "Orpheus F Picaro",
@@ -54,6 +61,7 @@ const Personas = [
     arcana: "Fool",
     image: "",
     moves: [],
+    price: 15000, // Added empty price element
   },
   {
     name: "Athena",
@@ -61,6 +69,7 @@ const Personas = [
     arcana: "Chariot",
     image: "",
     moves: [],
+    price: 55000, // Added empty price element
   },
   {
     name: "Athena Picaro",
@@ -68,6 +77,7 @@ const Personas = [
     arcana: "Chariot",
     image: "",
     moves: [],
+    price: 60000, // Added empty price element
   },
   {
     name: "Thanatos",
@@ -75,6 +85,7 @@ const Personas = [
     arcana: "Death",
     image: "",
     moves: [],
+    price: 100000, // Added empty price element
   },
   {
     name: "Thanatos Picaro",
@@ -82,6 +93,7 @@ const Personas = [
     arcana: "Death",
     image: "",
     moves: [],
+    price: 110000, // Added empty price element
   },
   {
     name: "Messiah",
@@ -89,6 +101,7 @@ const Personas = [
     arcana: "Judgement",
     image: "",
     moves: [],
+    price: 180000, // Added empty price element
   },
   {
     name: "Messiah Picaro",
@@ -96,6 +109,7 @@ const Personas = [
     arcana: "Judgement",
     image: "",
     moves: [],
+    price: 185000, // Added empty price element
   },
   {
     name: "Kaguya",
@@ -103,6 +117,7 @@ const Personas = [
     arcana: "Moon",
     image: "",
     moves: [],
+    price: 25000, // Added empty price element
   },
   {
     name: "Kaguya Picaro",
@@ -110,6 +125,7 @@ const Personas = [
     arcana: "Moon",
     image: "",
     moves: [],
+    price: 30000, // Added empty price element
   },
   {
     name: "Tsukiyomi",
@@ -117,6 +133,7 @@ const Personas = [
     arcana: "Moon",
     image: "",
     moves: [],
+    price: 55000, // Added empty price element
   },
   {
     name: "Tsukiyomi Picaro",
@@ -124,6 +141,7 @@ const Personas = [
     arcana: "Moon",
     image: "",
     moves: [],
+    price: 60000, // Added empty price element
   },
   {
     name: "Magatsu-Izanagi",
@@ -131,6 +149,7 @@ const Personas = [
     arcana: "Tower",
     image: "",
     moves: [],
+    price: 55000, // Added empty price element
   },
   {
     name: "Magatsu-Izanagi Picaro",
@@ -138,6 +157,7 @@ const Personas = [
     arcana: "Tower",
     image: "",
     moves: [],
+    price: 60000, // Added empty price element
   },
   {
     name: "Izanagi-no-Okami",
@@ -145,6 +165,7 @@ const Personas = [
     arcana: "World",
     image: "",
     moves: [],
+    price: 200000, // Added empty price element
   },
   {
     name: "Izanagi-no-Okami Picaro",
@@ -152,6 +173,7 @@ const Personas = [
     arcana: "World",
     image: "",
     moves: [],
+    price: 210000, // Added empty price element
   },
   {
     name: "Ariadne",
@@ -159,6 +181,7 @@ const Personas = [
     arcana: "Fortune",
     image: "",
     moves: [],
+    price: 55000, // Added empty price element
   },
   {
     name: "Ariadne Picaro",
@@ -166,6 +189,7 @@ const Personas = [
     arcana: "Fortune",
     image: "",
     moves: [],
+    price: 60000, // Added empty price element
   },
   {
     name: "Asterius",
@@ -173,6 +197,7 @@ const Personas = [
     arcana: "Fortune",
     image: "",
     moves: [],
+    price: 75000, // Added empty price element
   },
   {
     name: "Asterius Picaro",
@@ -180,6 +205,7 @@ const Personas = [
     arcana: "Fortune",
     image: "",
     moves: [],
+    price: 80000, // Added empty price element
   },
   {
     name: "Metatron",
@@ -187,6 +213,7 @@ const Personas = [
     arcana: "Justice",
     image: "",
     moves: [],
+    price: 120000, // Added empty price element
   },
   {
     name: "Lucifer",
@@ -194,6 +221,7 @@ const Personas = [
     arcana: "Star",
     image: "",
     moves: [],
+    price: 180000, // Added empty price element
   },
   {
     name: "Satan",
@@ -201,6 +229,7 @@ const Personas = [
     arcana: "Judgement",
     image: "",
     moves: [],
+    price: 150000, // Added empty price element
   },
   {
     name: "Michael",
@@ -208,6 +237,7 @@ const Personas = [
     arcana: "Judgement",
     image: "",
     moves: [],
+    price: 150000, // Added empty price element
   },
   {
     name: "Alice",
@@ -215,6 +245,7 @@ const Personas = [
     arcana: "Death",
     image: "",
     moves: [],
+    price: 150000, // Added empty price element
   },
   {
     name: "Satanael",
@@ -222,6 +253,7 @@ const Personas = [
     arcana: "Fool",
     image: "",
     moves: [],
+    price: 200000, // Added empty price element
   },
   {
     name: "Yoshitsune",
@@ -229,6 +261,7 @@ const Personas = [
     arcana: "Fool",
     image: "",
     moves: [],
+    price: 200000, // Added empty price element
   },
 ];
 

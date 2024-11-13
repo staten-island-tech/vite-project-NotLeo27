@@ -1,5 +1,3 @@
-
-
 html, body, * {
     margin: 0;
     padding: 0;
@@ -9,107 +7,39 @@ html, body, * {
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #222;
-    
+    background-color: var(--background-color);
+}
+
+#money {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center input fields horizontally */
+    margin-bottom: 20px; /* Add space below form */
+}
+
+#money input {
+    width: 200px; /* Set width for inputs */
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 1.4rem; /* Adjust font size */
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 #selection {
     width: 900px;
     margin: 20px auto;
-    background-color: #111;
+    background-color: var(--tab-bg);
     border: 3px solid #000;
     border-radius: 8px;
     padding: 20px;
-}
-
-.card {
-    position: relative; /* Make the card a positioned element for absolute positioning of the hover tab */
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    background-color: #333;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    transition: background-color 0.3s, transform 0.2s;
-}
-
-.card:hover {
-    background-color: #ff0707;
-    transform: translateY(-5px);
-}
-
-.hover-tab {
-    display: none; /* Hidden unless hovered over */
-    position: absolute;
-    top: 100%; /* Positioned just below the card */
-    left: 0;
-    width: 200px;
-    background-color: #444;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
-    text-align: center;
-    z-index: 2; /* z access so I can place it above the tab and not behind it  */
-}
-
-.card:hover .hover-tab {
-    display: block; 
-}
-
-.hover-tab img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 2px solid #555;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-    font-weight: bold;
-    color: #ddd;
-}
-
-.card img {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    margin-right: 15px;
-}
-
-.arcana {
-    background-color: white;
-    border-radius: 5%;
-    border-top: 5px;
-    width: 150px;
-    height: 30px;
-    text-align: center;
-    line-height: 30px;
-    font-size: var(--p);
-    color: #ff2b2b; /* Red color for Arcana labels */
-    
-}
-
-
-
-.name {
-    margin-right: auto;
-    padding-left: 10px;
-    font-size: var(--h2); /* Directly apply the variable */
-}
-
-.level {
-    margin-right: 5px;
-    padding-left: 10px;
-    font-size: var(--h2); /* Directly apply the variable */
+    color: var(--text-color);
 }
 
 .tabs {
     display: flex;
     justify-content: center;
-    background-color: #111;
+    background-color: var(--tab-bg);
     margin-bottom: 20px;
 }
 
@@ -118,33 +48,83 @@ body {
     color: #fff;
     text-transform: uppercase;
     font-weight: bold;
-    border: 1px solid #333;
+    border: 1px solid var(--card-bg);
     margin: 0 5px;
     cursor: pointer;
     transition: background 0.3s;
 }
 
-h1, h2, h3, h4, h5, p {
-    text-align: center; 
-    color: white;
+.tab:hover {
+    background-color: var(--primary-color); /* Red highlight on active tab */
 }
 
-.tab:hover {
-    background-color: #ff2b2b; /* Red highlight on active tab */
+/* Persona Card Styles */
+.card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--card-bg);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.card:hover {
+    background-color: var(--hover-bg);
+    transform: translateY(-5px);
+}
+
+
+.hover-tab {
+    display: none; 
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    width: 200px;
+    background-color: #444;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    z-index: 10; 
+}
+
+.card:hover .hover-tab {
+    display: block; 
+}
+
+
+.hover-tab img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.arcana {
+    background-color: white;
+    border-radius: 5%;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: var(--p);
+    color: var(--primary-color); 
+}
+
+.name, .level {
+    font-size: var(--h2); 
+    padding-left: 10px;
+}
+
+.name {
+    margin-right: auto;
+}
+
+.level {
+    margin-right: 5px;
 }
 
 .sort-buttons {
     align-self: center;
 }
-
-@media (max-width: 600px) {
-    #selection {
-      width: 100%;
-      padding: 10px;
-    }
-    .card {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  }
-

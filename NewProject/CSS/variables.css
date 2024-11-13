@@ -1,4 +1,16 @@
 :root {
-    --p: 1.4rem;
-    --h2: 1.6rem;
-  }
+    --p: 1.4rem;               
+    --h2: 1.6rem;              
+    --h1: 4rem;
+    --primary-color: #ff2b2b;  
+    --background-color: #222;  
+    --card-bg: #333;           
+    --hover-bg: #ff0707;       
+    --tab-bg: #111;            
+    --text-color: #ddd;        
+}
+
+h1, h2, h3, h4, h5, p {
+    text-align: center;
+    color: white;
+}

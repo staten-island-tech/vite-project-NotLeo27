@@ -1,10 +1,10 @@
-import "../CSS/style.css";
 import "../CSS/variables.css";
+import "../CSS/style.css";
 import { Personas } from "./products";
 import { DOMSelectors } from "./DOMSelectors";
 
-function addCards() {
-  Personas.forEach((persona) =>
+function addCards(filteredPersonas) {
+  filteredPersonas.forEach((persona) =>
     DOMSelectors.personaList.insertAdjacentHTML(
       "beforeend",
       `<div class="card" id="persona-item-${persona.name}">
@@ -21,10 +21,6 @@ function addCards() {
     )
   );
 }
-
-
-
-addCards()
 
 /* 
 
