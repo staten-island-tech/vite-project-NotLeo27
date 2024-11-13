@@ -14,7 +14,7 @@ function addCards(filteredPersonas) {
       <div class="price"> <p>${persona.price}</p> </div>
       
       <div class="hover-tab">
-          <img src="" alt="${persona.name} image placeholder" />
+          <img src=${persona.image} alt="${persona.name} image placeholder" />
       </div>
 
       </div>`
