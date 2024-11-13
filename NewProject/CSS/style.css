@@ -13,16 +13,25 @@ body {
 body.p3-theme {
     background-color: #001c29; /* Persona 3 dark blue */
     color: #c0c0c0;
-  }
+}
   
-  body.p3-theme h1 {
+body.p3-theme h1 {
     color: #8ab5d3; /* Persona 3 Blue */
-  }
+}
   
-  body.p3-theme p {
+body.p3-theme p {
     color: #b0b0b0;
-  }
+}
   
+#switchThemeButton {
+  background-color: #ff5e5e; /* Persona 5 Red */
+  color: white;
+  font-size: 1.1em;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
 
 .banner {
     width: 100%;
