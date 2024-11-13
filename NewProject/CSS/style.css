@@ -10,6 +10,36 @@ body {
     background-color: var(--background-color);
 }
 
+body.p3-theme {
+    background-color: #001c29; /* Persona 3 dark blue */
+    color: #c0c0c0;
+  }
+  
+  body.p3-theme h1 {
+    color: #8ab5d3; /* Persona 3 Blue */
+  }
+  
+  body.p3-theme p {
+    color: #b0b0b0;
+  }
+  
+
+.banner {
+    width: 100%;
+    height: 200px; /* Adjust height as desired */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333; /* Fallback background color */
+}
+  
+.banner img {
+    width: 100%; /* Make the image cover the full width */
+  height: 100%; /* Ensure it fills the height of the container */
+  object-fit: contain; /* Scale the image to fit within the banner */
+}
+
 #money {
     display: flex;
     flex-direction: column;
