@@ -72,6 +72,20 @@ function filterByPrice(event) {
   addCards(filteredPersonas);
 }
 
+const switchThemeButton = document.getElementById('switchThemeButton');
+
+// Function to switch the theme
+switchThemeButton.addEventListener('click', () => {
+  document.body.classList.toggle('p3-theme');  // Toggle Persona 3 Reload theme class
+  
+  // Toggle button appearance for Persona 3 Reload theme
+  if (document.body.classList.contains('p3-theme')) {
+    switchThemeButton.classList.add('p3-theme');
+  } else {
+    switchThemeButton.classList.remove('p3-theme');
+  }
+});
+
 
 DOMSelectors.criteria.forEach((tab) => tab.addEventListener("click", handleTabClick));
 
