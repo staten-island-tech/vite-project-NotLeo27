@@ -1,13 +1,15 @@
+@import url('./variables.css');
+
 html, body, * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 10px;
 }
+
 
 body {
     font-family: Arial, sans-serif;
-    background-color: var(--background-color);
+    background-color: var(--background-color);  
 }
 
 body.p3-theme {
@@ -31,6 +33,13 @@ body.p3-theme p {
   border: none;
   cursor: pointer;
   transition: background-color 0.3s;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-top: 20px; /* Optional: adjust spacing above */
 }
 
 .banner {
@@ -118,9 +127,9 @@ body.p3-theme p {
 
 .hover-tab {
     display: none; 
-    position: absolute;
+    position: relative; 
     top: 100%; 
-    left: 0;
+    left: 0.5%;
     width: 200px;
     background-color: #444;
     padding: 10px;
@@ -142,14 +151,13 @@ body.p3-theme p {
 }
 
 .arcana {
-    background-color: white;
+    background-color: black; /* Change background to white */
     border-radius: 5%;
     width: 150px;
     height: 30px;
     text-align: center;
     line-height: 30px;
     font-size: var(--p);
-    color: var(--primary-color); 
 }
 
 .name, .level {
