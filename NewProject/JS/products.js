@@ -10,14 +10,14 @@ const Personas = [
     name: "Raoul",
     level: 76,
     arcana: "Fool",
-    image: "",
+    image: "/Raoul.png",
     price: 125000,
   },
   {
     name: "Izanagi",
     level: 20,
     arcana: "Fool",
-    image: "",
+    image: "/Izanagi.png",
     price: 20000,
   },
   {
