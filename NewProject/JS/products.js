@@ -56,10 +56,10 @@ const Personas = [
     price: 25000,
   },
   {
-    name: "Tsukiyomi",
+    name: "Tsukuyomi",
     level: 50,
     arcana: "Moon",
-    image: "/Tsukiyomi.png",
+    image: "/Tsukuyomi.png",
     price: 55000,
   },
   {
