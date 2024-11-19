@@ -3,7 +3,6 @@ import "../CSS/style.css";
 import { Personas } from "./products";
 import { DOMSelectors } from "./DOMSelectors";
 
-
 function clearCards() {
   DOMSelectors.personaList.innerHTML = "";
 }
@@ -38,7 +37,7 @@ function sortPersonas(personas, criterion) {
 }
 
 function handleTabClick(event) {
-  const tabId = event.target.id;
+  const tabId = event.target.id; //returns the id of the detected event
   let criterion;
 
   if (tabId === "sort-level") {
@@ -57,8 +56,7 @@ function handleTabClick(event) {
 }
 
 function filterByPrice(event) {
-  
-  event.preventDefault();  // Prevent form submission from reloading the page
+  event.preventDefault(); // Prevent form submission from reloading the page
 
   const minPrice = parseFloat(DOMSelectors.min.value) || 0; // reads value from input fields
   const maxPrice = parseFloat(DOMSelectors.max.value) || Infinity; // reads value from input fields
@@ -67,27 +65,26 @@ function filterByPrice(event) {
     (persona) => persona.price >= minPrice && persona.price <= maxPrice
   );
 
-  // Clear and render filtered personas
   clearCards();
   addCards(filteredPersonas);
 }
 
-const switchThemeButton = document.getElementById('switchThemeButton');
+const switchThemeButton = document.getElementById("switchThemeButton");
 
-// Function to switch the theme
-switchThemeButton.addEventListener('click', () => {
-  document.body.classList.toggle('p3-theme');  // Toggle Persona 3 Reload theme class
-  
-  // Toggle button appearance for Persona 3 Reload theme
-  if (document.body.classList.contains('p3-theme')) {
-    switchThemeButton.classList.add('p3-theme');
+// function to switch the theme
+switchThemeButton.addEventListener("click", () => {
+  document.body.classList.toggle("p3-theme"); // toggles P3R theme class
+
+  if (document.body.classList.contains("p3-theme")) {
+    switchThemeButton.classList.add("p3-theme");
   } else {
-    switchThemeButton.classList.remove('p3-theme');
+    switchThemeButton.classList.remove("p3-theme");
   }
 });
 
-
-DOMSelectors.criteria.forEach((tab) => tab.addEventListener("click", handleTabClick));
+DOMSelectors.criteria.forEach((tab) =>
+  tab.addEventListener("click", handleTabClick)
+);
 
 document.getElementById("money").addEventListener("submit", filterByPrice);
 
