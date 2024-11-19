@@ -140,3 +140,5 @@ const Personas = [
     price: 200000,
   },
 ];
+
+export {Personas}
