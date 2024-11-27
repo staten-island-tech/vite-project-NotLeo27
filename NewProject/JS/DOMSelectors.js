@@ -5,8 +5,7 @@ const DOMSelectors = {
   sortLevel: document.getElementById("sort-level"),
   sortArcana: document.getElementById("sort-arcana"),
   sortABC: document.getElementById("sort-abc"),
-  criteria: document.querySelectorAll(".tab")
+  criteria: document.querySelectorAll(".tab"),
 };
 
 export { DOMSelectors };
-
